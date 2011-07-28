@@ -27,8 +27,9 @@ public final class MobMembershipHandler implements MembershipListener {
 	 */
 	@Override
 	public void memberRemoved(MembershipEvent arg0) {
+		final int peasantID = arg0.getMember().hashCode();
+		ourMob.leftMob(peasantID);
 		if (ourMob.iAmMaster()) {
-			final int peasantID = arg0.getMember().hashCode();
 			for (final Order order : tracker.recoverPeasant(peasantID)) {
 				OrderSubmitter.submitOrder(order);
 			}

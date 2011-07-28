@@ -13,6 +13,6 @@ public final class TestTask extends Task<TestOrder> {
 	 */
 	@Override
 	public void run() {
-		System.out.println(Mob.getMob().myID() + " processed Order " + order.getOrderID() + " with data " + order.data);
+		System.out.println(Mob.getMob().getMyID() + " processed Order " + order.getOrderID() + " with data " + order.data);
 	}
 }
