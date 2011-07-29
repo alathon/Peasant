@@ -4,5 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/queuemeister"/>
 	<classpathentry kind="lib" path="/queuemeister/lib/hazelcast-1.9.3.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mailman"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/parsemonster"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
