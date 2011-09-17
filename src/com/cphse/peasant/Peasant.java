@@ -15,7 +15,9 @@ public final class Peasant {
 		MailAccountOrder order = new MailAccountOrder(new MailConnectionDetails("./testAccount.props"));
 		OrderSubmitter.submitOrder(order);
 	}
-	public static void main(String[] args){
+
+	public static void main(String[] args) throws FileNotFoundException, IOException{
 		Mob.getMob().joinMob();
+		Peasant.testMailOrder();
 	}
 }

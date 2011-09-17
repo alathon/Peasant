@@ -1,0 +1,6 @@
+host = imap.gmail.com
+port = 993
+user = Mails@cphse.com
+password = Sh1pMail
+defaultFolder = INBOX
+protocol = IMAPS
